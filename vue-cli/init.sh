@@ -1,9 +1,7 @@
 #!/bin/bash
-FILE=""
-DIR="/code"
-# init
-# look for empty dir 
-if [ "$(ls -l $DIR)" ]; then
+FILE="/code/package.json"
+
+if [ -f "$FILE" ]; then
      echo "Starting project"
      npm run dev
 else
