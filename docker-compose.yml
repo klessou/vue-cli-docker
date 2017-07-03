@@ -1,0 +1,14 @@
+version: "3.1"
+services:
+  web:
+    build:
+        context: vue-cli
+        dockerfile: Dockerfile
+    container_name: vue-cli
+    command: ls -la /
+    command: sh /init.sh
+    #command: npm run dev
+    volumes:
+      - ./app:/code
+    ports:
+      - "8080:8080"
