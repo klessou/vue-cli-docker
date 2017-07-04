@@ -1,2 +1,2 @@
 #!/bin/bash
-alias vue='docker run -it --rm -v "$PWD":"$PWD" -w "$PWD"  -u "$(id -u)" vue-cli vue'
+alias web-vue="docker exec -ti vue-cli-docker vue"
