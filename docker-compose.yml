@@ -5,8 +5,7 @@ services:
         context: vue-cli
         dockerfile: Dockerfile
     container_name: vue-cli-docker
-    #command: sh /init.sh
-    #command: npm run dev
+    command: sh /init.sh
     volumes:
       - ./app:/code
     ports:
